@@ -2,5 +2,7 @@
 
 
 module.exports.home=(req,res)=>{
-    res.end("<h1>Dev</h1>");
+    return res.render('../views/home.ejs',{
+        title:"home"
+    });
 }
